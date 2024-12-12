@@ -99,7 +99,7 @@ const Createuser: React.FC<CreateuserProps> = ({
   useEffect(() => {
     if (router) {
       const { protocol, host } = window.location;
-      const baseUrl = `${protocol}/${host}`;
+      const baseUrl = `${protocol}//${host}`;
       setBaseUrl(baseUrl);
     }
   }, [router]);
